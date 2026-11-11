@@ -1,0 +1,158 @@
+/* COR DO FUNDO */
+body {
+    background-color: #F5F3EE;
+}
+
+/* COR DOS TEXTOS */
+body {
+    color: #333333;
+}
+
+/* TIPO DE LETRA */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* COR DO CABEÇALHO */
+.cabecalho {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DDDDDD;
+    padding: 16px 0;
+}
+
+/* ORGANIZAÇÃO DO MENU */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.links-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+/* NOME VIVAMENTE */
+.marca {
+    color: #5F806F;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* COR DOS LINKS DO MENU */
+.menu-link {
+    color: #333333;
+    text-decoration: none;
+}
+
+.menu-link:hover {
+    color: #5F806F;
+}
+
+/* ESPAÇO DO CONTEÚDO */
+.conteudo {
+    min-height: 70vh;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* TÍTULO DAS PÁGINAS */
+.titulo-pagina {
+    margin-bottom: 40px;
+}
+
+/* COR DOS SUBTÍTULOS */
+.subtitulo {
+    color: #666666;
+}
+
+/* CAIXAS BRANCAS */
+.caixa {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    border-radius: 12px;
+    padding: 24px;
+    height: 100%;
+}
+
+/* ESPAÇO ENTRE SEÇÕES */
+.secao {
+    margin-bottom: 24px;
+}
+
+/* NÚMEROS DA PÁGINA COMO FUNCIONA */
+.numero {
+    color: #739987;
+    font-size: 28px;
+}
+
+/* COR DOS BOTÕES */
+.botao-verde {
+    background-color: #739987;
+    border: 1px solid #739987;
+    color: #FFFFFF;
+}
+
+.botao-verde:hover {
+    background-color: #5F806F;
+    border-color: #5F806F;
+    color: #FFFFFF;
+}
+
+/* LARGURA DOS FORMULÁRIOS */
+.formulario {
+    max-width: 500px;
+    margin: auto;
+}
+
+/* TAMANHO DA FOTO */
+.foto-perfil {
+    border-radius: 12px;
+    max-width: 320px;
+    width: 100%;
+}
+
+/* CÍRCULO COM AS INICIAIS */
+.avatar {
+    background-color: #E4ECE7;
+    border-radius: 50%;
+    color: #5F806F;
+    font-size: 22px;
+    padding: 16px;
+    text-align: center;
+    width: 60px;
+}
+
+/* CAIXA DA CONFIRMAÇÃO */
+.confirmacao {
+    margin: auto;
+    max-width: 600px;
+}
+
+.simbolo-confirmacao {
+    color: #739987;
+    font-size: 50px;
+}
+
+/* TEXTO DE AVISO */
+.aviso {
+    color: #666666;
+    font-size: 14px;
+}
+
+/* COR DO RODAPÉ */
+.rodape {
+    background-color: #FFFFFF;
+    border-top: 1px solid #DDDDDD;
+    color: #666666;
+    padding: 24px;
+    text-align: center;
+}
+
+.rodape p {
+    margin: 4px;
+}
