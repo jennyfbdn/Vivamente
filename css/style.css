@@ -1,158 +1,55 @@
-/* COR DO FUNDO */
-body {
-    background-color: #F5F3EE;
-}
+/* CORES E AJUSTES GERAIS */
+* { box-sizing: border-box; }
+body { margin: 0; background: #f5f3ee; color: #333; font-family: Arial, sans-serif; line-height: 1.5; }
+a { color: inherit; text-decoration: none; }
 
-/* COR DOS TEXTOS */
-body {
-    color: #333333;
-}
+/* CABEÇALHO E MENU */
+.cabecalho { background: #fff; border-bottom: 1px solid #ddd; }
+.menu { align-items: center; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; min-height: 70px; }
+.marca { color: #5f806f; font-size: 26px; font-weight: bold; }
+.links-menu { display: flex; flex-wrap: wrap; gap: 16px; }
+.menu-link:hover { color: #5f806f; }
 
-/* TIPO DE LETRA */
-body {
-    font-family: Arial, sans-serif;
-}
+/* ESPAÇO PRINCIPAL E TÍTULOS */
+.conteudo { min-height: 70vh; padding-bottom: 60px; padding-top: 60px; }
+.titulo-pagina { margin-bottom: 40px; }
+.subtitulo, .aviso { color: #666; }
+.secao { margin-bottom: 24px; }
 
-/* COR DO CABEÇALHO */
-.cabecalho {
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #DDDDDD;
-    padding: 16px 0;
-}
+/* CAIXAS, CARTÕES E AVATARES */
+.caixa, .cartao { background: #fff; border: 1px solid #e2e2e2; border-radius: 12px; height: 100%; padding: 24px; }
+.numero { color: #739987; font-size: 28px; font-weight: bold; }
+.avatar { align-items: center; background: #e4ece7; border-radius: 50%; color: #5f806f; display: flex; font-size: 22px; font-weight: bold; height: 60px; justify-content: center; width: 60px; }
+.foto-perfil { border-radius: 12px; max-width: 320px; width: 100%; }
 
-/* ORGANIZAÇÃO DO MENU */
-.menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-}
+/* BOTÕES E LINKS DE AÇÃO */
+.botao-verde { background: #739987; border: 1px solid #739987; color: #fff; }
+.botao-verde:hover { background: #5f806f; border-color: #5f806f; color: #fff; }
+.botao-claro { border: 1px solid #739987; border-radius: 20px; color: #5f806f; display: inline-block; padding: 8px 14px; }
+.botao-claro:hover { background: #e4ece7; }
 
-.links-menu {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-}
+/* PÁGINA INICIAL */
+.hero { background: linear-gradient(90deg, #355043cc, #35504366), url('../imagens/escritorio-vivamente.jpg') center / cover; border-radius: 12px; color: #fff; padding: 80px 8%; }
+.hero-texto { max-width: 600px; }
+.hero h1 { font-size: 38px; }
+.lista-cartoes { display: grid; gap: 20px; grid-template-columns: repeat(3, 1fr); }
+.categoria { background: #fff; border: 1px solid #dfe5df; border-radius: 20px; color: #5f806f; padding: 8px 14px; }
+.categoria:hover { background: #e4ece7; }
+.botoes-categorias { display: flex; flex-wrap: wrap; gap: 10px; }
 
-/* NOME VIVAMENTE */
-.marca {
-    color: #5F806F;
-    font-size: 26px;
-    font-weight: bold;
-    text-decoration: none;
-}
+/* FORMULÁRIOS E CONFIRMAÇÃO */
+.formulario { margin: auto; max-width: 500px; }
+.confirmacao { margin: auto; max-width: 600px; }
+.simbolo-confirmacao { color: #739987; font-size: 50px; }
 
-/* COR DOS LINKS DO MENU */
-.menu-link {
-    color: #333333;
-    text-decoration: none;
-}
+/* ÁREA DO PACIENTE */
+.destaque-consulta { background: #739987; border-radius: 12px; color: #fff; padding: 24px; }
+.consulta-linha { align-items: center; background: #f8faf8; border-radius: 8px; display: flex; gap: 12px; justify-content: space-between; margin-top: 10px; padding: 12px; }
+.etiqueta { background: #eaf2ec; border-radius: 6px; color: #5f806f; font-size: 12px; padding: 5px 9px; }
 
-.menu-link:hover {
-    color: #5F806F;
-}
+/* RODAPÉ */
+.rodape { background: #fff; border-top: 1px solid #ddd; color: #666; padding: 24px; text-align: center; }
+.rodape p { margin: 4px; }
 
-/* ESPAÇO DO CONTEÚDO */
-.conteudo {
-    min-height: 70vh;
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-/* TÍTULO DAS PÁGINAS */
-.titulo-pagina {
-    margin-bottom: 40px;
-}
-
-/* COR DOS SUBTÍTULOS */
-.subtitulo {
-    color: #666666;
-}
-
-/* CAIXAS BRANCAS */
-.caixa {
-    background-color: #FFFFFF;
-    border: 1px solid #E2E2E2;
-    border-radius: 12px;
-    padding: 24px;
-    height: 100%;
-}
-
-/* ESPAÇO ENTRE SEÇÕES */
-.secao {
-    margin-bottom: 24px;
-}
-
-/* NÚMEROS DA PÁGINA COMO FUNCIONA */
-.numero {
-    color: #739987;
-    font-size: 28px;
-}
-
-/* COR DOS BOTÕES */
-.botao-verde {
-    background-color: #739987;
-    border: 1px solid #739987;
-    color: #FFFFFF;
-}
-
-.botao-verde:hover {
-    background-color: #5F806F;
-    border-color: #5F806F;
-    color: #FFFFFF;
-}
-
-/* LARGURA DOS FORMULÁRIOS */
-.formulario {
-    max-width: 500px;
-    margin: auto;
-}
-
-/* TAMANHO DA FOTO */
-.foto-perfil {
-    border-radius: 12px;
-    max-width: 320px;
-    width: 100%;
-}
-
-/* CÍRCULO COM AS INICIAIS */
-.avatar {
-    background-color: #E4ECE7;
-    border-radius: 50%;
-    color: #5F806F;
-    font-size: 22px;
-    padding: 16px;
-    text-align: center;
-    width: 60px;
-}
-
-/* CAIXA DA CONFIRMAÇÃO */
-.confirmacao {
-    margin: auto;
-    max-width: 600px;
-}
-
-.simbolo-confirmacao {
-    color: #739987;
-    font-size: 50px;
-}
-
-/* TEXTO DE AVISO */
-.aviso {
-    color: #666666;
-    font-size: 14px;
-}
-
-/* COR DO RODAPÉ */
-.rodape {
-    background-color: #FFFFFF;
-    border-top: 1px solid #DDDDDD;
-    color: #666666;
-    padding: 24px;
-    text-align: center;
-}
-
-.rodape p {
-    margin: 4px;
-}
+/* AJUSTES PARA CELULAR */
+@media (max-width: 767px) { .menu { justify-content: center; padding: 14px 0; } .links-menu { justify-content: center; } .conteudo { padding-top: 35px; } .hero { padding: 50px 8%; } .hero h1 { font-size: 30px; } .lista-cartoes { grid-template-columns: 1fr; } .consulta-linha { align-items: flex-start; flex-direction: column; } }

@@ -1,175 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <title>VivaMente</title>
-</head>
-
-<body>
-    <header>
-        <nav>
-            <h1 style="display:inline">VivaMente</h1>
-
-            <a href="#">Início</a>
-            <a href="#">Encontrar Psicólogo</a>
-            <a href="#">Como Funciona</a>
-            <a href="#">Sobre Nós</a>
-
-            <a href="#">Entrar</a>
-            <a href="#">Criar conta</a>
-        </nav>
-    </header>
-    <hr>
-
-    <main>
-
-    <section class="capa">
-        <h2>Cuidar da sua mente começa por encontrar o apoio certo</h2>
-        <p>Conectamos você de forma humanizada e segura a psicólogos qualificados para ajudar você.</p>
-        <img src="./imagens/escritorio-vivamente.jpg" alt="Logo VivaMente" style="width: 800px; height: auto;">
-        <br><button>Encontrar meu psicólogo</button>
-    </section>
-
-    <hr>
-
-    <section class="categorias-tratamento">
-        <h3>Como podemos ajudar você hoje?</h3>
-        <button>Ansiedade</button>
-        <button>Autodesenvolvimento</button>
-        <button>Depressão</button>
-        <button>TDAH</button>
-        <button>Relacionamentos</button>
-        <button>Psicologia Infantil</button>
-        <button>Outros</button>
-    </section>
-
-    <hr>
-
-    <section class="lista-profissionais">
-        <h2>Psicólogos de Destaque</h2>
-        <p>Profissionais recomendados e altamente qualificados prontos para acolher</p>
-
-        <div class="card-psicologo">
-            <h3>Dra. Carolina Mendes</h3>
-            <p>Ansiedade & Depressão</p>
-            <p>Abordagem: TCC - 8 anos de exp.</p>
-            <p>A partir de R$ 150</p>
-            <a href="#">Ver Perfil</a>
-        </div>
-
-        <div class="card-psicologo">
-            <h3>Dr. Roberto Alencar</h3>
-            <p>TDAH & Autismo Adulto</p>
-            <p>Abordagem: Neuropsicologia - 12 anos de exp.</p>
-            <p>A partir de R$ 150</p>
-            <a href="#">Ver Perfil</a>
-        </div>
-
-        <div class="card-psicologo">
-            <h3>Dra. Letícia Vieira</h3>
-            <p>Relacionamentos & Família</p>
-            <p>Abordagem: Sistêmica - 10 anos de exp.</p>
-            <p>A partir de R$ 150</p>
-            <a href="#">Ver Perfil</a>
-        </div>
-    </section>
-
-    <hr>
-
-    <section>
-        <h2>Como funciona a VivaMente</h2>
-        <p>Seu caminho para a psicoterapia simplificado e seguro.</p>
-
-        <div>
-            <h3>01.</h3>
-            <h4>Escolha o profissional</h4>
-            <p>Filtre por especialidades, abordagem clínica e horários que melhor se adaptam à sua rotina.</p>
-        </div>
-
-        <div>
-            <h3>02.</h3>
-            <h4>Agende com facilidade</h4>
-            <p>Escolha entre sessões presenciais ou online e reserve seu horário em poucos cliques.</p>
-        </div>
-
-        <div>
-            <h3>03.</3>
-            <h4>Cuide-se continuamente</h4>
-            
-            <p>Inicie suas sessões e mantenha seu cuidado, seguro, confidencial e focado em você.</p>
-        </div>
-    </section>
-
-    <hr>
-
-    <section class="depoimentos">
-        <h2>Histórias de quem encontrou o apoio certo</h2>
-
-        <div class="card-depoimento">
-            <p>"A plataforma me conectou com a psicóloga perfeita para o meu momento. O processo de agendamento foi
-                simples e o atendimento foi excelente."</p>
-            <p>Beatriz M., Ansiedade</p>
-        </div>
-
-        <div class="card-depoimento">
-            <p>"Encontrar um psicólogo especialista em TDAH que tivesse atendimento online com tanta qualidade
-                transformou minha rotina de estudos e trabalho."</p>
-            <p>Thiago S., TDAH</p>
-        </div>
-
-        <div class="card-depoimento">
-            <p>"Depois de muito hesitar, comecei a terapia e isso mudou completamente o nosso relacionamento."</p>
-            <p>Mariana & Carlos</p>
-        </div>
-
-    </section>
-
-    <hr>
-
+<html lang="pt-BR"><head>
+    <!-- CONFIGURAÇÕES DA PÁGINA -->
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>VivaMente | Início</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><link rel="stylesheet" href="css/style.css">
+</head><body>
+    <!-- CABEÇALHO E NAVEGAÇÃO -->
+    <header class="cabecalho"><nav class="container menu"><a class="marca" href="index.html">VivaMente</a><div class="links-menu"><a class="menu-link" href="como-funciona.html">Como funciona</a><a class="menu-link" href="resultados.html">Psicólogos</a><a class="menu-link" href="perfil-psicologo.html">Perfil</a><a class="menu-link" href="area-paciente.html">Minha Área</a><a class="menu-link" href="login.html">Entrar</a><a class="menu-link" href="cadastro.html">Criar Conta</a></div></nav></header>
+    <main class="container conteudo">
+        <!-- APRESENTAÇÃO PRINCIPAL -->
+        <section class="hero"><div class="hero-texto"><h1>Cuidar da sua mente começa por encontrar o apoio certo.</h1><p>Conectamos você a psicólogos fictícios para demonstrar o funcionamento de uma plataforma de terapia.</p><a class="btn botao-verde" href="resultados.html">Encontrar psicólogo</a></div></section>
+        <!-- CATEGORIAS DE AJUDA -->
+        <section class="secao mt-5"><h2>Como podemos ajudar você?</h2><div class="botoes-categorias"><button class="categoria">Ansiedade</button><button class="categoria">Depressão</button><button class="categoria">TDAH</button><button class="categoria">Relacionamentos</button><button class="categoria">Autoestima</button></div></section>
+        <!-- PSICÓLOGOS EM DESTAQUE -->
+        <section class="secao"><h2>Psicólogos de destaque</h2><p class="subtitulo">Profissionais fictícios para este projeto acadêmico.</p><div class="lista-cartoes"><article class="cartao"><div class="avatar">CM</div><h3>Dra. Carolina Mendes</h3><p>Ansiedade e depressão</p><a class="botao-claro" href="perfil-psicologo.html">Ver perfil</a></article><article class="cartao"><div class="avatar">RA</div><h3>Dr. Roberto Alencar</h3><p>TDAH e neuropsicologia</p><a class="botao-claro" href="resultados.html">Ver perfil</a></article><article class="cartao"><div class="avatar">LV</div><h3>Dra. Letícia Vieira</h3><p>Relacionamentos</p><a class="botao-claro" href="resultados.html">Ver perfil</a></article></div></section>
+        <!-- ETAPAS DA PLATAFORMA -->
+        <section class="secao"><h2>Como funciona</h2><div class="lista-cartoes"><article class="cartao"><p class="numero">01</p><h3>Escolha</h3><p>Veja os profissionais disponíveis.</p></article><article class="cartao"><p class="numero">02</p><h3>Agende</h3><p>Selecione uma consulta ilustrativa.</p></article><article class="cartao"><p class="numero">03</p><h3>Cuide-se</h3><p>Comece seu acompanhamento.</p></article></div></section>
+        <!-- DEPOIMENTOS ILUSTRATIVOS -->
+        <section class="secao"><h2>Histórias de quem encontrou apoio</h2><div class="lista-cartoes"><article class="cartao"><p>“O processo foi simples e acolhedor.”</p><p class="subtitulo">Beatriz M. — Ansiedade</p></article><article class="cartao"><p>“Encontrei um profissional para minha necessidade.”</p><p class="subtitulo">Thiago S. — TDAH</p></article><article class="cartao"><p>“A plataforma ajudou na busca por terapia.”</p><p class="subtitulo">Mariana e Carlos</p></article></div></section>
     </main>
-
-    <footer>
-
-        <div>
-            <h3>VivaMente</h3>
-            <p>Conectando você aos melhores profissionais de psicologia para uma jornada de autocuidado e cuidado mental.</p>
-        </div>
-
-        <div>
-            <h4>Navegação</h4>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Encontrar Psicólogo</a></li>
-                <li><a href="#">Como Funciona</a></li>
-                <li><a href="#">Planos</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h4>Especialidades</h4>
-            <ul>
-                <li><p>Ansiedade</p>
-                <li><p>Depressão</p>
-                <li><p>TDAH</p>
-                <li><p>TOC</p></li>
-            </ul>
-        </div>
-
-        <div>
-            <h4>Contato</h4>
-            <ul>
-                <li><p>contato@vivamemente.com.br</p></li>
-                <li><p>(0800) 123 4567</p></li>
-            </ul>
-        </div>
-
-        <hr>
-
-        <p>©2026 VivaMente. Todos os direitos reservados.</p>
-        <p>Desenvolvido com carinho para o seu bem-estar.</p>
-
-    </footer>
-
-</body>
-</html>
+    <!-- RODAPÉ -->
+    <footer class="rodape"><p>© 2026 VivaMente — Projeto acadêmico.</p><p>Plataforma demonstrativa, sem atendimento ou pagamentos reais.</p></footer>
+</body></html>
