@@ -1,17 +1,23 @@
 # VivaMente
 
-Projeto acadêmico de uma plataforma fictícia para encontrar psicólogos.
+Projeto acadêmico fictício sobre busca de apoio psicológico.
 
 ## Como abrir
 
-Abra o arquivo `index.html` no navegador.
+Abra `index.html` no navegador.
 
-## Páginas principais
+## Páginas
 
-- `index.html`: página inicial;
-- `resultados.html`: lista de psicólogos fictícios;
-- `perfil-psicologo.html`: perfil fictício;
-- `area-paciente.html`: painel demonstrativo;
-- `login.html`, `cadastro.html`, `pagamento.html` e `confirmacao.html`: telas ilustrativas.
+- `index.html`: início
+- `como-funciona.html`: etapas da plataforma
+- `resultados.html`: psicólogos fictícios
+- `agendamento.html`: horários ilustrativos
+- `area-paciente.html`: painel demonstrativo
+- `sobre-nos.html`: propósito e contato
 
-Não há login, pagamento, agenda, banco de dados ou atendimento real.
+## Guia de estudo
+
+Leia [DOCUMENTACAO.md](DOCUMENTACAO.md) para aprender a alterar cores, fontes,
+bordas, botões, espaços, links e imagens.
+
+Não há login, agenda, pagamento ou mensagens reais.

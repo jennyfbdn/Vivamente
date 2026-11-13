@@ -1,55 +1,74 @@
-/* CORES E AJUSTES GERAIS */
-* { box-sizing: border-box; }
-body { margin: 0; background: #f5f3ee; color: #333; font-family: Arial, sans-serif; line-height: 1.5; }
-a { color: inherit; text-decoration: none; }
+/* AJUSTES GERAIS */
+* {
+    box-sizing: border-box; /* Inclui borda e espaço interno no tamanho. */
+}
+body {
+    margin: 0; /* Remove a margem padrão. */
+    background: #f5f3ee; /* Cor do fundo. */
+    color: #333; /* Cor dos textos. */
+    font-family: Arial, sans-serif; /* Fonte do site. */
+    line-height: 1.5; /* Espaço entre linhas. */
+}
+a { color: inherit; text-decoration: none; /* Remove sublinhado dos links. */ }
 
-/* CABEÇALHO E MENU */
-.cabecalho { background: #fff; border-bottom: 1px solid #ddd; }
-.menu { align-items: center; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; min-height: 70px; }
-.marca { color: #5f806f; font-size: 26px; font-weight: bold; }
-.links-menu { display: flex; flex-wrap: wrap; gap: 16px; }
+/* CABEÇALHO: marca à esquerda, links ao centro e conta à direita */
+.cabecalho {
+    background: #fff; /* Cor branca do cabeçalho. */
+    border-bottom: 1px solid #ddd; /* Linha cinza abaixo do cabeçalho. */
+}
+.menu {
+    display: flex; /* Deixa os itens do menu lado a lado. */
+    align-items: center; /* Alinha os itens no meio, na vertical. */
+    gap: 16px; /* Espaço de 16 pixels entre os itens. */
+    min-height: 70px; /* Altura mínima do cabeçalho. */
+}
+.marca {
+    color: #5f806f; /* Cor verde do nome VivaMente. */
+    font-size: 26px; /* Tamanho do texto. */
+    font-weight: bold; /* Deixa o texto em negrito. */
+}
+.links-menu {
+    display: flex; /* Deixa os links lado a lado. */
+    align-items: center; /* Alinha os links no meio. */
+    flex: 1; /* Faz os links ocuparem o espaço livre. */
+    justify-content: center; /* Centraliza os links principais. */
+    gap: 16px; /* Espaço entre cada link. */
+}
+.links-menu a[href="login.html"] {
+    margin-left: auto; /* Empurra Entrar e Criar Conta para a direita. */
+}
 .menu-link:hover { color: #5f806f; }
 
-/* ESPAÇO PRINCIPAL E TÍTULOS */
-.conteudo { min-height: 70vh; padding-bottom: 60px; padding-top: 60px; }
+/* CONTEÚDO E CARTÕES */
+.conteudo { min-height: 70vh; padding-top: 30px; padding-bottom: 60px; }
 .titulo-pagina { margin-bottom: 40px; }
 .subtitulo, .aviso { color: #666; }
 .secao { margin-bottom: 24px; }
-
-/* CAIXAS, CARTÕES E AVATARES */
 .caixa, .cartao { background: #fff; border: 1px solid #e2e2e2; border-radius: 12px; height: 100%; padding: 24px; }
 .numero { color: #739987; font-size: 28px; font-weight: bold; }
-.avatar { align-items: center; background: #e4ece7; border-radius: 50%; color: #5f806f; display: flex; font-size: 22px; font-weight: bold; height: 60px; justify-content: center; width: 60px; }
+.avatar { display: flex; align-items: center; justify-content: center; background: #e4ece7; border-radius: 50%; color: #5f806f; font-size: 22px; font-weight: bold; height: 60px; width: 60px; }
 .foto-perfil { border-radius: 12px; max-width: 320px; width: 100%; }
 
-/* BOTÕES E LINKS DE AÇÃO */
+/* BOTÕES */
 .botao-verde { background: #739987; border: 1px solid #739987; color: #fff; }
 .botao-verde:hover { background: #5f806f; border-color: #5f806f; color: #fff; }
 .botao-claro { border: 1px solid #739987; border-radius: 20px; color: #5f806f; display: inline-block; padding: 8px 14px; }
-.botao-claro:hover { background: #e4ece7; }
 
-/* PÁGINA INICIAL */
+/* PÁGINAS ESPECIAIS */
 .hero { background: linear-gradient(90deg, #355043cc, #35504366), url('../imagens/escritorio-vivamente.jpg') center / cover; border-radius: 12px; color: #fff; padding: 80px 8%; }
 .hero-texto { max-width: 600px; }
 .hero h1 { font-size: 38px; }
-.lista-cartoes { display: grid; gap: 20px; grid-template-columns: repeat(3, 1fr); }
-.categoria { background: #fff; border: 1px solid #dfe5df; border-radius: 20px; color: #5f806f; padding: 8px 14px; }
-.categoria:hover { background: #e4ece7; }
-.botoes-categorias { display: flex; flex-wrap: wrap; gap: 10px; }
-
-/* FORMULÁRIOS E CONFIRMAÇÃO */
-.formulario { margin: auto; max-width: 500px; }
-.confirmacao { margin: auto; max-width: 600px; }
-.simbolo-confirmacao { color: #739987; font-size: 50px; }
-
-/* ÁREA DO PACIENTE */
+.lista-cartoes, .filtros, .valores { display: grid; gap: 20px; grid-template-columns: repeat(3, 1fr); }
+.botoes-categorias, .horarios { display: flex; flex-wrap: wrap; gap: 10px; }
+.categoria, .horario { background: #e4ece7; border: 1px solid #dfe5df; border-radius: 20px; color: #5f806f; padding: 8px 14px; }
+.formulario, .confirmacao { margin: auto; max-width: 600px; }
+.resultado, .consulta-linha { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.foto-profissional { border-radius: 10px; height: 120px; object-fit: cover; width: 150px; }
+.foto-destaque { border-radius: 12px; max-height: 280px; object-fit: cover; width: 100%; }
 .destaque-consulta { background: #739987; border-radius: 12px; color: #fff; padding: 24px; }
-.consulta-linha { align-items: center; background: #f8faf8; border-radius: 8px; display: flex; gap: 12px; justify-content: space-between; margin-top: 10px; padding: 12px; }
-.etiqueta { background: #eaf2ec; border-radius: 6px; color: #5f806f; font-size: 12px; padding: 5px 9px; }
+.etiqueta { background: #eaf2ec; border-radius: 6px; color: #5f806f; padding: 5px 9px; }
 
-/* RODAPÉ */
+/* RODAPÉ E CELULAR */
 .rodape { background: #fff; border-top: 1px solid #ddd; color: #666; padding: 24px; text-align: center; }
 .rodape p { margin: 4px; }
-
-/* AJUSTES PARA CELULAR */
-@media (max-width: 767px) { .menu { justify-content: center; padding: 14px 0; } .links-menu { justify-content: center; } .conteudo { padding-top: 35px; } .hero { padding: 50px 8%; } .hero h1 { font-size: 30px; } .lista-cartoes { grid-template-columns: 1fr; } .consulta-linha { align-items: flex-start; flex-direction: column; } }
+@media (max-width: 767px) { .menu, .links-menu { flex-wrap: wrap; justify-content: center; } .links-menu a[href="login.html"] { margin-left: 0; } .lista-cartoes, .filtros, .valores { grid-template-columns: 1fr; } .resultado, .consulta-linha { align-items: flex-start; flex-direction: column; } }
